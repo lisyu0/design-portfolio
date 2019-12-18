@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="shp_main.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a><image src="assets/shp_logo_transparent.png" id="logo" /></a>
+        </header>
+        <navmenu><button id="toggle-menu-button" type="button" onclick=toggleMenu()><i class="fas fa-bars"></i></button></navmenu>
+        <nav>
+            <a class="nav-link">About the Program</a>
+            <a class="nav-link">Academic Calendar</a>
+            <a class="nav-link">Courses</a>
+            <a class="nav-link">Application Portal</a>
+            <a class="nav-link" id="apply-button">How to Apply</a>
+        </nav>
+        <div id="splash-image">
+            <div id="splash-image-container">
+                <div class="splash-image-text">
+                    <p>The Columbia University Science Honors Program (SHP) is a Saturday morning program specifically designed for high school students in the tenth, eleventh, and twelfth grades.</p>
+                    <p>Classes are held on the Columbia University Morningside Campus during the entire academic year from September through May.</p>
+                </div>
+                <div class="splash-image-caption">
+                    The Hubble Space Telescope's view of the core of galaxy M100.
+                </div>
+            </div>
+        </div>
+        <div id="announcements-box">
+            <div id="announcements-title">Current Announcements <i class="fas fa-angle-double-right"></i></div>
+            <div>The Fall semester of classes will begin on <b>Saturday, September 21st</b>.</div>
+            <div>All members should receive an email about fall semester courses by the end of the day on <b>September 15th</b>, including login instructions for the online course selection form.</div>
+            <div>The deadline for course selections is <b>11:59pm on Wednesday, September 18th</b>.</div>
+        </div>
+        <footer>
+            <image id="cu-logo" src="assets/cu_logo_white.png" width='70px' height='70px'></image>
+            <div>Sponsored by Columbia University<br />Science Departments</div>
+            <div id="last-updated" style="text-align:right;">Last modified<br />September 16, 2019</div>
+        </footer>
+    </body>
+
+    <script src="shp_main.js"></script>
+
+</html>

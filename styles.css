@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana,     sans-serif;
+    color: #363636;
+
+    /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr; TODO: remove */
+}
+
+body a {
+    color: black;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR & NAV STYLING */
+
+sidebar {
+    position: fixed;
+    top: 10vw;
+    left: 12vw;
+    width: 275px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    text-align: right;
+    font-size: 16px;
+}
+
+sitetitle {
+    padding-top: 5vw;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: right;
+    /* color: #22be70; */
+}
+
+sitetitle a:hover {
+    text-decoration: none;
+}
+
+/* #ell {
+    color: #22be70;
+} */
+
+desc {
+    padding: 30px 0;
+    font-weight: 300;
+}
+
+navmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+navmenu a {
+    padding: 5px 0;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+}
+
+/* LEFT PANE (MAIN) STYLING */
+
+maingrid {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    padding: 10vw 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+    grid-auto-columns: auto;
+    grid-gap: 5vw;
+}
+
+maingrid > a {
+    text-decoration: none;
+}
+
+maingrid > a:hover {
+    text-decoration: none;
+}
+
+.maingrid-item {
+    position: relative;
+    width: 20vw;
+    height: 25vw;
+    border: none;  
+    background: #ffffff;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.maingrid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    /* height: 20vw; */
+}
+
+.maingrid-caption {
+    background: #fff;
+    color: black;
+    padding: 1vw;
+    z-index: 1000;
+}
+
+.maingrid-caption > h1 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: none;
+    color: #363636;
+    margin: 0.5vw 0;
+}
+
+.maingrid-caption > p {
+    color: #5e5e5e;
+    margin: 0.5vw 0;
+}
+
+.maingrid-caption tags {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.maingrid-caption tags > * {
+    color: black;
+    margin: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.maingrid-caption tags > *:first-child {
+    margin-left: 0;
+}
+
+.maingrid-caption tags > *:last-child {
+    margin-right: 0;
+}
+
+/* CONTENT PAGE STYLING */
+
+content {
+    /* margin: 5vw;
+    padding: 10vw 5vw; */
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    padding: 10vw 5vw;
+    width: 45vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+content a {
+    color: black;
+    text-decoration: underline;
+}
+
+content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 3vw 0;
+    letter-spacing: 1px;
+}
+
+content h2 {
+    margin-top: 7vw;
+    margin-bottom: 1vw;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+content p {
+    color: #5e5e5e;
+    line-height: 1.2em;
+}
+
+content ul {
+    margin-top: 0;
+    color: inherit;
+}
+
+content li {
+    color: #5e5e5e;
+    margin: 0.5em;
+}
+
+content img {
+    margin: 2vw;
+    max-width: 40vw;
+    align-self: center;
+}
+
+content .image-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 15px;
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+content .image-set img {
+    margin: 2vw;
+    margin-bottom: 0;
+    max-width: 20vw;
+}
+
+content .image-set .caption {
+    margin: 1vw 2vw;
+    margin-bottom: 2vw;
+}

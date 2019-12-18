@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500|Roboto:300,400,500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <sidebar>
+        <sitetitle>
+            <a href="../index.html">
+                St<span id="ell">ell</span>a Li
+            </a>
+        </sitetitle>
+        <desc>
+            <p>Studying software engineering, computer systems, & full-stack development at Brown University in Rhode Island.</p>
+        </desc>
+        <navmenu>
+            <a href="../index.html">PROJECTS</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="">SOMELINK</a>
+        </navmenu>
+    </sidebar>
+    <content>
+        <h1>Fish Compendium</h1>
+        
+        <h2>Project</h2>
+        <p>This project was completed as part of an assignment on creating a "filterable, sortable, searchable" catalogue interface.</p>
+
+        <p>The "Fish Compendium" provides a modern, simple catalogue for the fish collectables in the video game <a href="https://www.nintendo.com/games/detail/animal-crossing-new-leaf-3ds/">Animal Crossing: New Leaf</a>.</p>
+            
+        <p><a href="https://acnl-fish-compendium.herokuapp.com/">A live version of this project can be found here</a>.</p>
+
+        <h2>Goals</h2>
+        <p>The Fish Compendium aims to create an interface for players to easily keep track of which fish species they have collected, look up how to find the species that they are missing, and filter or search for certain species. A player can set filter settings to the current location and time of their game, and easily see which not-yet-caught fish are available to obtain; or simply search for certain fish to look up the times and locations where they are obtainable. </p>
+
+        <h2>Design Choices</h2>
+        
+        <p>The interface of this project was designed with intuitive use and simplicity in mind.</p>
+
+        <img src="../assets/fish_compendium.png" />
+
+        <p>To create a consistent visual hierarchy, information is grouped in rounded boxes for easier parsing and reading. Additionally, clickable tags outside of the filter bar (e.g., the location tags on each species's information card) are styled with an accent color so that the user can easily understand which elements are interactable.</p>
+        
+        <p>Options for filtering, sorting, and searching are clearly presented in a section at the top of the screen, and the catalogue's results are presented in graphic form reminiscent of information cards. Cards can also be clicked on to open a larger, more detailed window, which provides more context for a first-time user or user who is less experienced with Animal Crossing. All filter and tag buttons provide tooltip-like hints when hovered over, to create an invisible guide for new users.</p>
+        
+        <p>User navigation is streamlined by the use of large, easily clickable buttons and clickable regions for filtering by tag or opening detailed information panes. Users can also click outside of detailed information panes to close them, as may be expected of modern applications. </p>
+        
+        <p>To create a more comfortable user experience, all button and toggle actions are accompanied by a visual response (such as clicking on a "time found" filter tag, which changes the button's color to indicate that this tag is active). This choice reassures users that actions are being executed successfully, even if the effect of the selection on the catalogue is not apparent at first (e.g., choosing to filter only fish that appear during the day yields little change in the catalogue, since most fish appear in the day, but the highlighted filter button indicates that the filter was successfully applied).</p>
+        
+        <h2>Conclusion</h2>
+        <p>I designed a new, modern interface for the Columbia SHP Program's website. While simpler, more bare-bones interfaces do not inherently impede user access and ease of use, modern websites can make use of modern users' expectations and intuitions to create a more elegant website experience.</p>
+
+        <p>This project was undertaken as a personal project, and is not affilated or endorsed by Columbia University or the Science Honors Program.</p>
+
+    </content>
+    </body>
+</html>

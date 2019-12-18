@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500|Roboto:300,400,500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <sidebar>
+        <sitetitle>
+            <a href="../index.html">
+                St<span id="ell">ell</span>a Li
+            </a>
+        </sitetitle>
+        <desc>
+            <p>Studying software engineering, computer systems, & full-stack development at Brown University in Rhode Island.</p>
+        </desc>
+        <navmenu>
+            <a href="../index.html">PROJECTS</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="">SOMELINK</a>
+        </navmenu>
+    </sidebar>
+    <content>
+        <h1>Redesigning Columbia SHP's Website</h1>
+        <p>Each year, Columbia University opens its Science Honors Program to hundreds of high school students
+        across the tri-state area. The free program provides an exploratory experience for high schoolers with
+        an interest in math or science through weekend lectures led by graduate students and professors.
+        Students participate in a rigorous application process (including two tests) to attend, and the
+        competition grows fiercer every year.</p>
+        <p>
+        As a former participant myself, Columbia University’s Science Honors Program (SHP for short) was an
+        incredible and unique experience. The only problem? <a target="_blank" href="http://columbia.edu/cu/shp/index.html">The program’s website</a> poses a unique challenge to its users:</p>
+
+        <img src="../assets/SHP_landing_page.png" />
+
+        <h2>Problems with an Antiquated Design</h2>
+        <p>The most notable user issue with the SHP website is its style and layout-- users who are used to
+        modern sites with large text, ample spacing, and sleek menus could be at first confused by the
+        “vintage” layout of this homepage. Although all links are clearly marked and labeled, the user expects to
+        see a page adhering to certain modern standards, and the lack of these causes the design to feel
+        unintuitive and inefficient.</p>
+
+        <p>At immediate glance, lack of a distinct visual hierarchy of color or size makes the information of this page difficult to scan. Although some information is
+        bolded, the lack of other distinctions combined with the monotonous blocks of inline
+        text create a cluttered layout.</p>
+        <p>In this project, we aim to redesign the layout of this website, and address some of these problems.</p>
+
+        <h2>Wireframing</h2>
+        <p>To begin, I reimagined each of the major pages of the SHP website with low-fidelity wireframes:</p>
+
+        <div class="image-set">
+            <div>
+                <img src="../assets/redesign_project/wireframe_photos/CS1300 Redesign Wireframe-1.png" />
+                <div class="caption">Homepage</div>
+            </div>
+            <div>
+                <img src="../assets/redesign_project/wireframe_photos/CS1300 Redesign Wireframe-2.png" />
+                <div class="caption">Course Selection</div>
+            </div>
+            <div>
+                <img src="../assets/redesign_project/wireframe_photos/CS1300 Redesign Wireframe-3.png" />
+                <div class="caption">Application Page</div>
+            </div>
+            <div>
+                <img src="../assets/redesign_project/wireframe_photos/CS1300 Redesign Wireframe-4.png" />
+                <div class="caption">About the Program</div>
+            </div>
+        </div>
+
+        <p>My main goals with these initial designs was to:</p>
+        <ul>
+            <li>Present a simple, elegant layout that modern users are more comfortable with</li>
+            <li>Create a strong visual hierarchy</li>
+            <li>Increase ease and intuitiveness of navigation</li>
+        </ul>
+
+        <h2>High-Fidelity Mockup</h2>
+        <p>Next, I created a colored mock-up of the redesigned homepage:</p>
+
+        <img src="../assets/redesign_project/CS1300 Redesign Mockup.png" />
+
+        <p>In this mockup, I 
+        created visual differences between different parts of the page-- for example, the title is given a unique
+        font, menu items have distinct text size and take on button-like shapes, and the title for “Current
+        Announcements” is given a much larger text size than the announcements themselves. I used a grid
+        for the announcements section to make it easy for readers to see the distinct announcements, and
+        placed the site’s introductory blurb in a uniquely-colored and -positioned box to make it easily ignorable
+        for frequent site users who are just checking for new announcements</p>
+        <p>I chose a modern-looking, simple palette that imitates the palette of Columbia
+        University’s main homepage, solidifying the connection between the program and the university and
+        reinforcing the site's reliability in the user’s eyes. I used an accent color to highlight the
+        “How to Apply” button so that new users can quickly find the most important information regarding the
+        program, and ensured that colors varied across the page for a visually interesting layout that does not
+        impede readability.</p>
+
+        <h2>Responsive Development</h2>
+        <p>Finally, I created a <a target="_blank" href="../assets/redesign_project/handin/shp_main.html">live, responsive web page version</a> of this mockup, which resizes and adjusts dynamically to the size of the viewport. </p>
+
+        <h2>Conclusion</h2>
+        <p>I designed a new, modern interface for the Columbia SHP Program's website. While simpler, more bare-bones interfaces do not inherently impede user access and ease of use, modern websites can make use of modern users' expectations and intuitions to create a more elegant website experience.</p>
+
+        <p>This project was undertaken as a personal project, and is not affilated or endorsed by Columbia University or the Science Honors Program.</p>
+
+
+    </content>
+    </body>
+</html>
