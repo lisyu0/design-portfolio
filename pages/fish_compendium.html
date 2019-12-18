@@ -3,7 +3,7 @@
         <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500|Roboto:300,400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500|Raleway:700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -21,13 +21,13 @@
             <a href="../about.html">ABOUT</a>
         </navmenu>
     </sidebar>
-    <content>
+    <content class="load-fadein">
         <h1>Fish Compendium</h1>
         
         <h2>Project</h2>
         <p>This project was completed as part of an assignment on creating a "filterable, sortable, searchable" catalogue interface.</p>
             
-        <p><a href="https://acnl-fish-compendium.herokuapp.com/">A live version of this project can be found here</a>.</p>
+        <p><a target="_blank" href="https://acnl-fish-compendium.herokuapp.com/">A live version of this project can be found here</a>.</p>
 
         <h2>Goals</h2>
 
@@ -39,9 +39,16 @@
         
         <p>The interface of this project was designed with intuitive use and simplicity in mind.</p>
 
-        <img src="../assets/fish_compendium.png" />
-
-        <img src="../assets/fish-compendium-card.png" />
+        <div class="image-set one-col">
+            <div>
+                <img src="../assets/fish_compendium.png" />
+                <div class="caption">The catalogue main page.</div>
+            </div>
+            <div>
+                <img src="../assets/fish-compendium-card.png" />
+                <div class="caption">An "information card" for a specific species.</div>
+            </div>
+        </div>
 
         <p>To create a consistent visual hierarchy, information is grouped in rounded boxes for easier parsing and reading. Additionally, clickable tags outside of the filter bar (e.g., the location tags on each species's information card) are styled with an accent color so that the user can easily understand which elements are interactable.</p>
         
@@ -58,4 +65,7 @@
 
     </content>
     </body>
+
+    <script src="../onload.js"></script>
+
 </html>

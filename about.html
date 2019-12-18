@@ -3,7 +3,7 @@
         <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500|Roboto:300,400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500|Raleway:700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -22,13 +22,13 @@
         </navmenu>
     </sidebar>
     <content>
-        <h1>Hi, I'm Stella!</h1>
-        <p>I'm a student at Brown University in Providence, RI, currently pursuing a Sc. B. in Computer Science, with a focus in user-oriented interface design and software engineering. </p>
+        <h1 class="load-fadein">Hi, I'm Stella!</h1>
+        <p class="load-fadein">I'm a student at Brown University in Providence, RI, currently pursuing a Sc. B. in Computer Science, with a focus in user-oriented interface design and software engineering. </p>
 
-        <p><a href="mailto:stella_li@brown.edu">Let's get in touch!</a></p>
+        <p class="load-fadein"><a href="mailto:stella_li@brown.edu">Let's get in touch!</a></p>
 
-        <h2>Coursework</h2>
-        <ul>
+        <h2 class="load-fadein">Coursework</h2>
+        <ul class="load-fadein">
             <li>CSCI 0190: Accelerated Introduction to Computer Science
                 <!-- <br /><tags><span>Pyret</span><span>Algorithms</span></tags> -->
             </li>
@@ -38,4 +38,7 @@
         </ul>
     </content>
     </body>
+
+    <script src="onload.js"></script>
+
 </html>
