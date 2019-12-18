@@ -12,6 +12,13 @@ body {
 body a {
     color: black;
     text-decoration: none;
+/* 
+    -webkit-transition: text-decoration 0.5s ease-in;
+    -moz-transition: text-decoration 0.5s ease-in;
+    -o-transition: text-decoration 0.5s ease-in;
+    -ms-transition: text-decoration 0.5s ease-in;
+    transition: text-decoration 0.5s ease-in;
+    transition: text-decoration 0.2s; */
 }
 
 body a:hover {
@@ -134,13 +141,13 @@ maingrid > a:hover {
     margin: 0.5vw 0;
 }
 
-.maingrid-caption tags {
+tags {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
 
-.maingrid-caption tags > * {
+tags > * {
     color: black;
     margin: 5px 10px;
     text-transform: uppercase;
@@ -150,11 +157,11 @@ maingrid > a:hover {
     font-weight: 600;
 }
 
-.maingrid-caption tags > *:first-child {
+tags > *:first-child {
     margin-left: 0;
 }
 
-.maingrid-caption tags > *:last-child {
+tags > *:last-child {
     margin-right: 0;
 }
 
