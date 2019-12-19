@@ -24,10 +24,27 @@ body.load {
 body a {
     color: black;
     text-decoration: none;
+
+    /* TODO: remove */
+    -webkit-transition: color 0.1s ease-in;
+       -moz-transition: color 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in;
+         -o-transition: color 0.1s ease-in;
+            transition: color 0.1s ease-in;
 }
 
 body a:hover {
-    text-decoration: underline;
+    color: #13c46b;
+}
+
+/* GLOBAL STYLING */
+
+::selection {
+    background: #3cee95; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #3cee95; /* Gecko Browsers */
 }
 
 /* ONLOAD EASE IN ANIMATION STYLING */
@@ -250,10 +267,6 @@ maincontent .image-set {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     grid-gap: 15px;
-    text-align: center;
-    color: #666666;
-    font-weight: 300;
-    font-size: 14px;
 }
 
 maincontent .image-set.one-col {
@@ -270,9 +283,14 @@ maincontent .image-set.one-col img {
     max-width: 40vw;
 }
 
-maincontent .image-set .caption {
+maincontent .caption {
     margin: 1vw 2vw;
     margin-bottom: 2vw;
+
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 /* RESPONSIVE STYLING */

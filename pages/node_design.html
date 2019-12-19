@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <!-- Fix for missing responsiveness in Chrome device viewer as described in Piazza #299 -->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500|Raleway:700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/594d8c05a5.js" crossorigin="anonymous"></script>
+    </head>
+    <title>Stella Li</title>
+    <body>
+    <sidebar>
+        <sitetitle>
+            <a href="../index.html">
+                St<span id="ell">ell</span>a Li
+            </a>
+        </sitetitle>
+        <desc>
+            <p>Studying interface design, software engineering, & full-stack development at Brown University in Rhode Island.</p>
+        </desc>
+        <navmenu>
+            <a href="../index.html">PROJECTS</a>
+            <a href="../about.html">ABOUT</a>
+        </navmenu>
+    </sidebar>
+    <maincontent class="load-fadein">
+        <h1>Designing an Inteface for Node</h1>
+        
+        <h2>Project</h2>
+        <p>Our challenge was to design an interface for the start-up business Node, which designs sustainable, backyard cottages that can be self-assembled within days to create fully-functional, elegant homes. </p>
+
+        <h2>Target Users</h2>
+        <p>Since construction and real estate aren’t top of consumers’ minds each day, we hypothesize that
+        our target users will be searching up keywords that will lead them to this website, or discover the
+        company through online news sites, which can be viewed on a desktop computer. Thus, we
+        chose to build a desktop website.</p>
+
+        <p>Our interface directly impacts homeowners desiring more livable space in their backyard, a vacation home in their yard, ability to offer more space to friends and
+        family when they visit, or space for caregivers to live next door to elderly clients.
+        The level of difficulty required to design and order Node
+        homes with our interface could affect these customers and their interest in the company.</p>
+
+        <p>In order to ethically handle these effects, our interface should address the unique situation of
+        each homeowner, allowing them to vary their house dimensions and bedroom/bath number for
+        various needs. It should also accommodate different types of homebuyer, optimize for our end
+        user’s satisfaction, and improve the way users receive Node and the company’s success.</p>
+
+        <h2>Iterative Sketches</h2>
+        <p>With these goals in mind, we created a number of initial sketches for a potential interface:</p>
+
+        <div class="image-set">
+            <div>
+                <img src="../assets/node_project/sketches_1-a.jpg" />
+            </div>
+            <div>
+                <img src="../assets/node_project/sketches_1-b.jpg" />
+            </div>
+            <div>
+                <img src="../assets/node_project/sketches_1-c.jpg" />
+            </div>
+            <div>
+                <img src="../assets/node_project/sketches_1-d.jpg" />
+            </div>
+        </div>
+
+        <img src="../assets/node_project/sketches_2.png" />
+
+        <h2>Prototyping</h2>
+
+        <p>Next, we created a high-fidelity, interactable prototype that took users through the process of ordering a Node home on our website.</p>
+
+        <p>We then took the prototype to a
+        critique session, where users noted that they wanted more information on the home page, more
+        details about the houses they were purchasing, and more guidance through the browsing process
+        instead of being immediately prompted to ‘buy now.’ </p>
+        
+        <p>Thus, we added a step-by-step guide on the
+        main page for users to immediately learn about the product and changed the purchasing flow to
+        include more details along the way to increase user comfort. We also added
+        “back” buttons on each page, the option to view floor plans, and also a browsing page that allows
+        users to compare and view all housing options at once. Finally, to reflect the actual process used
+        by Node, we removed the actual purchasing step and replaced the order process with a
+        reservation process, which feels more reliable, less high-commitment, and more legitimate.</p>
+
+        <div class="image-set one-col">
+            <div>
+                <img src="../assets/node_project/prototype_2-a.png" />
+                <div class="caption">Homepage</div>
+            </div>
+        </div>
+
+        <div class="image-set">
+            <div>
+                <img src="../assets/node_project/prototype_2-b.png" />
+                <div class="caption">First step of purchase flow prompts users for preferences</div> 
+            </div>
+            <div>
+                <img src="../assets/node_project/prototype_2-c.png" />
+                <div class="caption">Users then can access a selection of home designs that are tailored to their needs</div> 
+            </div>
+            <div>
+                <img src="../assets/node_project/prototype_2-d.png" />
+                <div class="caption">A "review selection" screen allows users to confirm their selection and view floor plans</div> 
+            </div>
+            <div>
+                <img src="../assets/node_project/prototype_2-e.png" />
+                <div class="caption">Users are then directed to the reservation process</div> 
+            </div>
+        </div>
+
+        <p>After our first round of critiques, we realized trust and
+        information would be the biggest two factors in users choosing whether or not to invest in Node. </p>
+
+        <h2>User Testing</h2>
+
+        <p> We hypothesized that people need to be given enough information to trust this company and feel
+        comfortable purchasing such a large and new type of product online. To test this, we gave users tasks
+        and prompts to see if people could understand Node’s concept based on the home page’s initial
+        impression, make appropriate selections to purchase their house, and gauge how their trust and
+        understanding of the company and product changed throughout usage of the prototype. </p>
+
+        <p>Overall, our results showed that people had some level of trust in the company, but not quite
+        enough. We underestimated the amount of information they would need in order to make a
+        purchase. Therefore, the user testing was an important extension of a critique as people talked
+        specifically about features such as user reviews, the number of satisfied customers, and
+        housing-specific details (that older demographics knew but students didn’t) they’d want before
+        making a purchase. We also analyzed engagement metrics below.</p>
+
+        <div class="img-set one-col">
+            <div>
+                <img src="../assets/node_project/user_testing_res.png" />
+                <div class="caption">Results of user testing</div>
+            </div>
+        </div>
+
+        <p>The metrics on the table reflect that the users were able to complete all the tasks (completion rate) but ran into a few errors (error rate) which may have impacted the time it took them to move on from the task (time on task). The most common error involved initially finding housing options to view, which was a lapse error. This was because they tried to click the browse button at the top as opposed to the Call to Action (CTA) button at the bottom. They were also confused about the offerings and felt that the CTA was off and should be "browse houses" or "build your own house" or something along those lines. The second error when making selections was a mistake when the user thought clicking in a different area would move them forward. Overall, the users seemed relatively satisfied, but became frustrated when elements weren’t positioned exactly as their mental model would’ve dictated and they couldn’t find the exact information they were looking for.</p>
+
+        <h2>Future Interface Changes</h2>
+
+        <p>Our user testing results made us aware of three major areas in need of improvement on our interface: clarity of information, prioritization of information, and content that builds credibility. </p>
+            
+        <p>First, we noticed that all three user testers either did not realize their ability to scroll down on the home page or chose not to. For this reason, we should add an affordance indicating that there is more information below the fold. We initially considered placing a blinking downward arrow to show this, but then realized that adjusting the image on the home screen so it is clearly cut off while still above the fold would indicate that more content is available. Regarding the bullet points below the fold on the home page, we should add small images corresponding to the theme of each point to make the content more engaging and understandable.</p>
+        
+        <p>Second, we should change the text on the home page’s “Browse Now” button to “Browse Designs” to be more clear about the purpose of this button. Third, we should allow users to access home floor plans earlier during the “Browse Styles” step, rather than just on the “Review Selection” step. Similarly, after seeing all users ignore or skim it, we would replace the “Review Selection” step’s description of the Node home with detailed, punchy bullet points instead.</p>
+        
+        <p>Finally, while this is a prototype, credibility was mentioned a few times among the three users, and so we’d add more images, links to partners, sponsors, and testimonials, and perhaps a video explaining the process of ordering and building a Node, on our home page. </p>
+
+        <h2>Conclusion</h2>
+        <p>During our user testing experience, we learned the importance of clarity and specificity in instructions and context. We noticed that much of our feedback focused on information that was not present on our site—legal, zoning, and hyper-specific engineering and architectural  information you’d expect to have access to when buying a home. We knew this information was not present and would have preferred feedback on the usability and visual components of the interface instead.</p>
+
+        <p>Our ability to design the interface with enough interactivity for the users to complete a particularly defined task was successful. We learned that there’s a balancing act between being specific enough in instructions without telling the user exactly what to do and thus preventing them from making mistakes that we can learn from. Otherwise, we were surprised by the variance in feedback we received—one user provided 20 minutes worth of detailed, insightful feedback while the other two seemed eager to complete the task and finish the assignment as quickly as possible. </p>
+
+        <p>This project was undertaken as part of a course assignment, and is not affilated or endorsed by Node.</p>
+
+
+    </maincontent>
+    </body>
+
+    <script src="../onload.js"></script>
+
+</html>
